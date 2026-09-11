@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Suraj Gajanan Gawande — Java Full Stack Developer">
+<title>SURAJ // CYBERPUNK V2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#030507;color:#e7f7f1;font-family:Rajdhani,Arial,sans-serif;overflow-x:hidden}body.light{background:#edf7f3;color:#07110f;--muted:#41534e;--line:#b9d3ca}.noise{position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.13;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.03) 4px)}#matrix{position:fixed;inset:0;z-index:-4;opacity:.28}#particles{position:fixed;inset:0;z-index:-2;pointer-events:none}.particle{position:absolute;width:2px;height:2px;background:#00ffae;box-shadow:0 0 9px #00ffae;border-radius:50%;animation:float linear infinite}header{height:76px;position:sticky;top:0;z-index:15;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;background:rgba(3,5,7,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,255,174,.17)}.light header{background:rgba(237,247,243,.78)}.brand{font:800 1.15rem Orbitron;color:inherit;text-decoration:none}.brand span{color:#00ffae;text-shadow:0 0 15px #00ffae}.brand em{font:500 .5rem Rajdhani;color:#647771;margin-left:5px;font-style:normal}.nav{display:flex;gap:28px}.nav a,.socials a{font:600 .7rem Orbitron;color:#758780;text-decoration:none;letter-spacing:1px}.nav a:hover,.socials a:hover{color:#00ffae}.header-actions{display:flex;gap:10px;align-items:center}.header-actions button,.mini-btn{background:transparent;border:1px solid #24433a;color:#9cafaa;padding:9px 12px;font:600 .62rem Orbitron;text-decoration:none;cursor:pointer}.mini-btn:hover,.header-actions button:hover{border-color:#00ffae;color:#00ffae}.hero{min-height:calc(100vh - 76px);padding:70px 8vw;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}.system-line{font:600 .68rem Orbitron;letter-spacing:1.4px;color:#74847e}.system-line span{display:inline-block;width:7px;height:7px;border-radius:50%;background:#00ffae;box-shadow:0 0 12px #00ffae;margin-right:8px}.kicker{font:600 .7rem Orbitron;letter-spacing:4px;color:#00ffae;margin:22px 0 14px}.hero h1{font:900 clamp(3.7rem,8vw,7.7rem)/.83 Orbitron;letter-spacing:-6px;margin:0}.hero h1 strong{color:#00ffae;text-shadow:0 0 30px rgba(0,255,174,.35)}.hero h1 span{animation:blink 1s infinite;color:#ff198f}.lead{max-width:650px;font-size:1.15rem;line-height:1.55;color:#91a39d;margin:30px 0}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:15px 19px;border:1px solid #31534a;background:rgba(8,14,15,.55);color:#dff1eb;text-decoration:none;font:600 .66rem Orbitron;letter-spacing:1px;cursor:pointer}.btn.neon{background:#00ffae;color:#02100a;border-color:#00ffae;box-shadow:0 0 25px rgba(0,255,174,.2)}.btn:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(0,255,174,.18)}.socials{display:flex;gap:24px;margin-top:25px}.avatar-stage{height:620px;position:relative;display:flex;align-items:center;justify-content:center}.ring{position:absolute;border:1px solid rgba(0,255,174,.28);border-radius:50%;transform:rotateX(68deg)}.ring-1{width:480px;height:480px;animation:spin 15s linear infinite}.ring-2{width:390px;height:390px;border-color:rgba(255,25,143,.3);animation:spin 10s linear infinite reverse}.ring-3{width:310px;height:310px;animation:spin 8s linear infinite}.avatar{width:250px;height:390px;position:relative;z-index:3;filter:drop-shadow(0 0 22px rgba(0,255,174,.25))}.head{position:absolute;left:55px;top:15px;width:140px;height:160px;border:2px solid #00ffae;border-radius:48% 48% 43% 43%;background:linear-gradient(135deg,#132521,#07100f);box-shadow:inset 0 0 35px rgba(0,255,174,.12),0 0 25px rgba(0,255,174,.16);overflow:hidden}.visor{position:absolute;left:10px;right:10px;top:64px;height:34px;border:1px solid #ff198f;background:linear-gradient(90deg,transparent,rgba(255,25,143,.35),transparent);box-shadow:0 0 18px rgba(255,25,143,.35)}.face-grid{position:absolute;inset:0;background:linear-gradient(rgba(0,255,174,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,174,.06) 1px,transparent 1px);background-size:16px 16px}.neck{position:absolute;left:98px;top:170px;width:54px;height:40px;background:#0c1715;border:1px solid #2c6657}.body{position:absolute;left:25px;top:195px;width:200px;height:180px;clip-path:polygon(16% 0,84% 0,100% 100%,0 100%);background:linear-gradient(145deg,#11201c,#07100f);border:2px solid #00ffae;box-shadow:inset 0 0 45px rgba(0,255,174,.1)}.body i{position:absolute;top:45px;width:50px;height:2px;background:#00ffae;box-shadow:0 0 10px #00ffae}.body i:first-of-type{left:30px}.body i:last-of-type{right:30px}.chest-logo{position:absolute;left:78px;top:63px;color:#00ffae;font:800 1.5rem Orbitron;text-shadow:0 0 12px #00ffae}.shoulder{position:absolute;top:205px;width:65px;height:70px;background:#0d1a17;border:1px solid #24584c}.shoulder.left{left:0;clip-path:polygon(0 20%,100% 0,100% 100%,15% 80%)}.shoulder.right{right:0;clip-path:polygon(0 0,100% 20%,85% 80%,0 100%)}.orbital{position:absolute;width:560px;height:120px;border:1px solid rgba(0,255,174,.25);border-radius:50%;transform:rotate(-25deg);z-index:2}.orbital span{position:absolute;width:9px;height:9px;background:#ff198f;border-radius:50%;box-shadow:0 0 16px #ff198f;right:20%;top:8%}.hud{position:absolute;z-index:5;border-left:2px solid #00ffae;padding:8px 12px;background:rgba(4,10,9,.72);font:600 .6rem Orbitron;color:#70827b}.hud b{display:block;color:#00ffae;margin-top:5px}.hud-a{top:12%;left:2%}.hud-b{right:2%;bottom:14%}.scan{position:absolute;width:430px;height:2px;background:#00ffae;box-shadow:0 0 15px #00ffae;opacity:.45;animation:scan 4s ease-in-out infinite}.section{padding:110px 8vw}.section-title{display:flex;align-items:center;gap:18px;border-bottom:1px solid rgba(0,255,174,.16);padding-bottom:20px;margin-bottom:55px}.section-title small{color:#00ffae;font:600 .7rem Orbitron}.section-title h2{font:700 clamp(1.4rem,3vw,2.2rem) Orbitron;margin:0}.about{display:grid;grid-template-columns:1fr 1fr;gap:60px}.about h3,.contact h3{font:800 clamp(2rem,4vw,4rem)/1 Orbitron;margin:0 0 25px}.about h3 span,.contact h3 span{color:#00ffae}.about p{font-size:1.05rem;line-height:1.75;color:#879891;max-width:650px}.terminal{border:1px solid #204138;background:rgba(5,12,11,.7);box-shadow:inset 0 0 40px rgba(0,255,174,.04)}.tbar{padding:12px 16px;border-bottom:1px solid #1c342d;color:#61736c;font:600 .65rem "Courier New"}.tbar span{float:right;color:#36554b}.terminal pre{padding:25px;font:500 .75rem/2 "Courier New";color:#80928b;white-space:pre-wrap}.terminal pre b,.terminal pre i{color:#00ffae;font-style:normal}.stack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tech{padding:28px;border:1px solid #1a3129;background:rgba(5,11,10,.75);transition:.2s}.tech:hover{border-color:#00ffae;transform:translateY(-5px)}.tech span{font:700 1rem Orbitron;display:block}.tech b{font:500 .68rem Rajdhani;color:#657771;letter-spacing:1px}.tech i{display:block;height:3px;background:#172922;margin-top:23px;position:relative}.tech i:after{content:"";position:absolute;inset:0;width:var(--p);background:#00ffae;box-shadow:0 0 12px #00ffae}.github-head{display:flex;justify-content:space-between;gap:20px;align-items:center;color:#82928d;margin-bottom:20px}.github-head b{color:#00ffae}.github-head span{font:600 .6rem Orbitron;color:#ff198f}.repo-grid,.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.repo,.project-grid article{border:1px solid #1b332b;background:rgba(6,12,11,.78);padding:25px;min-height:230px;transition:.2s}.repo:hover,.project-grid article:hover{border-color:#00ffae;transform:translateY(-5px)}.repo h3,.project-grid h3{font:700 1.1rem Orbitron;margin:20px 0 10px}.repo p,.project-grid p{color:#7e9089;line-height:1.55}.repo-meta{display:flex;justify-content:space-between;color:#00ffae;font-size:.7rem;margin-top:20px}.repo a{color:#dcece7;text-decoration:none;font:600 .62rem Orbitron}.loader{border:1px dashed #285047;padding:35px;text-align:center;color:#60736c;font:600 .7rem Orbitron;grid-column:1/-1}.project-grid label{font:600 .6rem Orbitron;color:#00ffae}.project-grid article>div{margin-top:25px;color:#52665e;font:600 .62rem Orbitron}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;border:1px solid #1e3b31;padding:50px;background:radial-gradient(circle at 0 0,rgba(0,255,174,.08),transparent 40%)}.muted{color:#82928d;line-height:1.6}.contact-data{display:flex;flex-direction:column;gap:12px;margin-top:25px}.contact-data a{color:#00ffae;text-decoration:none;font:600 .72rem Orbitron}form{display:flex;flex-direction:column;gap:17px}form label{font:600 .6rem Orbitron;color:#70827a}input,textarea{display:block;width:100%;margin-top:7px;background:#060c0b;border:1px solid #24453a;color:#e7f7f1;padding:14px;font:500 1rem Rajdhani;outline:none}input:focus,textarea:focus{border-color:#00ffae;box-shadow:0 0 15px rgba(0,255,174,.08)}footer{border-top:1px solid #15271f;padding:28px 8vw;display:flex;justify-content:space-between;color:#4f625a;font:600 .58rem Orbitron;letter-spacing:1px}@keyframes spin{to{transform:rotateX(68deg) rotateZ(360deg)}}@keyframes scan{0%,100%{transform:translateY(-210px)}50%{transform:translateY(210px)}}@keyframes blink{50%{opacity:0}}@keyframes float{from{transform:translateY(0)}to{transform:translateY(-100vh)}}@media(max-width:900px){.nav{display:none}.hero,.about,.contact-grid{grid-template-columns:1fr}.hero{padding-top:60px}.avatar-stage{height:500px}.stack-grid,.repo-grid,.project-grid{grid-template-columns:1fr 1fr}.header-actions{position:absolute;right:5vw}.brand{margin-right:auto}}@media(max-width:600px){.hero h1{font-size:3.2rem;letter-spacing:-3px}.section{padding:75px 6vw}.stack-grid,.repo-grid,.project-grid{grid-template-columns:1fr}.avatar-stage{transform:scale(.8);margin:-35px 0}.contact-grid{padding:28px}.github-head{flex-direction:column;align-items:flex-start}footer{flex-direction:column;gap:10px}}
+</style>
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div id="particles"></div>
+<div class="noise"></div>
+
+<header>
+  <a class="brand" href="#home"><span>SG</span><em>// SYSTEM</em></a>
+  <nav>
+    <a href="#about">ABOUT</a><a href="#stack">STACK</a><a href="#github">GITHUB</a><a href="#contact">CONTACT</a>
+  </nav>
+  <div class="header-actions">
+    <button id="themeBtn" title="Toggle theme">◐</button>
+    <a class="mini-btn" href="resume.html" download>RESUME ↓</a>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-left">
+    <div class="system-line"><span></span> ONLINE / JAVA FULL STACK DEVELOPER</div>
+    <p class="kicker">DIGITAL ARCHITECT // 001</p>
+    <h1>SURAJ<br><strong>GAJANAN</strong><br>GAWANDE<span>_</span></h1>
+    <p class="lead">I engineer scalable backend systems, responsive interfaces and practical full-stack applications with Java at the core.</p>
+    <div class="actions"><a class="btn neon" href="#github">VIEW MY CODE ↗</a><a class="btn" href="#contact">START A CONNECTION</a></div>
+    <div class="socials"><a href="https://github.com/surajgawande1810" target="_blank">GITHUB</a><a href="https://www.linkedin.com/in/suraj-gawande-2b93b43b2/" target="_blank">LINKEDIN</a><a href="mailto:surajggawande647@gmail.com">EMAIL</a></div>
+  </div>
+
+  <div class="avatar-stage">
+    <div class="hud hud-a">CORE_TEMP <b>37.4°C</b></div>
+    <div class="hud hud-b">JAVA <b>FULL STACK</b></div>
+    <div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div>
+    <div class="avatar">
+      <div class="head"><div class="visor"></div><div class="face-grid"></div></div>
+      <div class="neck"></div>
+      <div class="body"><div class="chest-logo">SG</div><i></i><i></i></div>
+      <div class="shoulder left"></div><div class="shoulder right"></div>
+    </div>
+    <div class="scan"></div>
+    <div class="orbital"><span></span></div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="section-title"><small>01</small><h2>ABOUT // OPERATOR</h2></div>
+  <div class="about">
+    <div><h3>BUILD. DEBUG. <span>EVOLVE.</span></h3><p>I'm Suraj Gajanan Gawande, a Java Full Stack Developer focused on strong fundamentals, clean code and building projects that solve real problems.</p><p>My current direction is Java + Spring Boot + SQL on the backend, with modern HTML/CSS/JavaScript on the frontend and DSA for stronger problem solving.</p></div>
+    <div class="terminal"><div class="tbar">suraj@node-01 <span>● ● ●</span></div><pre><b>$ ./profile.sh</b>
+ROLE     : JAVA FULL STACK
+MODE     : BUILD / LEARN
+BACKEND  : JAVA + SPRING
+DATABASE : MYSQL / SQL
+FRONTEND : HTML / CSS / JS
+STATUS   : <i>READY TO BUILD</i>
+$ <span class="typing"></span>█</pre></div>
+  </div>
+</section>
+
+<section id="stack" class="section">
+  <div class="section-title"><small>02</small><h2>TECH // ARSENAL</h2></div>
+  <div class="stack-grid">
+    <div class="tech"><span>JAVA</span><b>CORE / OOP / DSA</b><i style="--p:88%"></i></div>
+    <div class="tech"><span>SPRING BOOT</span><b>REST / MVC / APIs</b><i style="--p:75%"></i></div>
+    <div class="tech"><span>SQL / MYSQL</span><b>CRUD / JOINS / DB</b><i style="--p:82%"></i></div>
+    <div class="tech"><span>JAVASCRIPT</span><b>DOM / ASYNC / UI</b><i style="--p:72%"></i></div>
+    <div class="tech"><span>HTML + CSS</span><b>RESPONSIVE / UI</b><i style="--p:85%"></i></div>
+    <div class="tech"><span>GIT + GITHUB</span><b>VERSION CONTROL</b><i style="--p:80%"></i></div>
+  </div>
+</section>
+
+<section id="github" class="section">
+  <div class="section-title"><small>03</small><h2>GITHUB // LIVE FEED</h2></div>
+  <div class="github-head"><p>Public repositories are loaded live from <b>github.com/surajgawande1810</b>.</p><span id="repoStatus">CONNECTING...</span></div>
+  <div id="repos" class="repo-grid"><div class="loader">INITIALIZING REPOSITORY SCANNER...</div></div>
+</section>
+
+<section class="section projects">
+  <div class="section-title"><small>04</small><h2>PROJECT // SIMULATIONS</h2></div>
+  <div class="project-grid">
+    <article><label>JAVA / OOP</label><h3>ATM MACHINE SYSTEM</h3><p>Encapsulation, abstraction, inheritance, polymorphism and transaction workflows.</p><div>JAVA · OOP · LOGIC</div></article>
+    <article><label>SPRING BOOT</label><h3>STUDENT HUB API</h3><p>RESTful student management platform with CRUD, validation and MySQL persistence.</p><div>SPRING · REST · MYSQL</div></article>
+    <article><label>FULL STACK</label><h3>DEV TASKFORGE</h3><p>Developer productivity dashboard for tasks, priorities and progress tracking.</p><div>JAVA · JS · SQL</div></article>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="section-title"><small>05</small><h2>CONTACT // UPLINK</h2></div>
+  <div class="contact-grid">
+    <div><p class="kicker">OPEN CHANNEL</p><h3>LET'S BUILD THE<br><span>NEXT SYSTEM.</span></h3><p class="muted">Send a message. The form uses FormSubmit for email delivery; if the service is unavailable, your email client can still be used through the direct email link.</p><div class="contact-data"><a href="mailto:surajggawande647@gmail.com">surajggawande647@gmail.com ↗</a><a href="tel:+919421054216">+91 94210 54216 ↗</a></div></div>
+    <form action="https://formsubmit.co/surajggawande647@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Portfolio contact — Suraj Gawande">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://example.com/thanks.html">
+      <label>IDENTITY<input required name="name" placeholder="Your name"></label>
+      <label>EMAIL<input required type="email" name="email" placeholder="you@example.com"></label>
+      <label>MESSAGE<textarea required name="message" rows="5" placeholder="Tell me about the opportunity..."></textarea></label>
+      <button class="btn neon" type="submit">TRANSMIT MESSAGE ↗</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><span>SURAJ // GAWANDE</span><span>JAVA FULL STACK DEVELOPER</span><span>2026 // ALL SYSTEMS NOMINAL</span></footer>
+
+<script>
+// Matrix rain
+const c=document.getElementById("matrix"),ctx=c.getContext("2d");
+function resize(){c.width=innerWidth;c.height=innerHeight}resize();addEventListener("resize",resize);
+const chars="01{}[]<>/\\\\$JAVA";let drops=[];
+function init(){drops=Array(Math.ceil(innerWidth/15)).fill(0).map(()=>Math.random()*innerHeight/15)}
+init();
+setInterval(()=>{ctx.fillStyle="rgba(3,5,7,.11)";ctx.fillRect(0,0,c.width,c.height);ctx.fillStyle="#00ffae";ctx.font="12px monospace";for(let i=0;i<drops.length;i++){const x=i*15,y=drops[i]*15;ctx.fillText(chars[Math.floor(Math.random()*chars.length)],x,y);if(y>c.height&&Math.random()>.975)drops[i]=0;drops[i]++}},55);
+
+// Floating particles
+const pc=document.getElementById("particles");
+for(let i=0;i<55;i++){const p=document.createElement("i");p.className="particle";p.style.left=Math.random()*100+"%";p.style.top=(60+Math.random()*50)+"%";p.style.animationDuration=(7+Math.random()*13)+"s";p.style.animationDelay=(-Math.random()*15)+"s";pc.appendChild(p)}
+
+// Theme toggle
+const themeBtn=document.getElementById("themeBtn");
+themeBtn.onclick=()=>{document.body.classList.toggle("light");localStorage.setItem("suraj-theme",document.body.classList.contains("light")?"light":"dark")};
+if(localStorage.getItem("suraj-theme")==="light")document.body.classList.add("light");
+
+// GitHub live public repository feed
+const user="surajgawande1810";
+const repos=document.getElementById("repos"),status=document.getElementById("repoStatus");
+fetch(`https://api.github.com/users/${user}/repos?sort=updated&per_page=9`)
+.then(r=>{if(!r.ok)throw new Error("GitHub API error");return r.json()})
+.then(data=>{
+  status.textContent=`${data.length} REPOSITORIES DETECTED`;
+  if(!data.length){repos.innerHTML='<div class="loader">NO PUBLIC REPOSITORIES FOUND.</div>';return}
+  repos.innerHTML=data.map(r=>`
+    <article class="repo">
+      <div style="color:#00ffae;font:600 .58rem Orbitron">${r.language||"CODE"} // ${r.stargazers_count} ★</div>
+      <h3>${escapeHtml(r.name)}</h3>
+      <p>${escapeHtml(r.description||"Repository ready for inspection.")}</p>
+      <div class="repo-meta"><span>${r.forks_count} FORKS</span><a href="${r.html_url}" target="_blank">OPEN ↗</a></div>
+    </article>`).join("");
+})
+.catch(()=>{status.textContent="OFFLINE / FALLBACK MODE";repos.innerHTML='<div class="loader">GITHUB FEED TEMPORARILY UNAVAILABLE. USE THE GITHUB LINK IN THE HEADER.</div>'});
+
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+
+// Small typing effect
+const lines=["git commit -m 'build the future'","java --version","spring boot: READY","deploy --production"];
+let li=0,ci=0,dir=1;const typing=document.querySelector(".typing");
+setInterval(()=>{const s=lines[li];typing.textContent=s.slice(0,ci);ci+=dir;if(ci>s.length+1){dir=-1}if(ci<0){dir=1;li=(li+1)%lines.length}},100);
+</script>
+</body>
+</html>
